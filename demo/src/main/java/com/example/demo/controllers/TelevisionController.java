@@ -25,6 +25,7 @@ public class TelevisionController {
     // array begint telling met 0
     // .size begint telling met 1
 
+
     @GetMapping("/televisions/{id}")
     public ResponseEntity<Object> getOneTelevision(@PathVariable Long id) {
         return new ResponseEntity<>(televisionService.getTelevision(id), HttpStatus.OK);
